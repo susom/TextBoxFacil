@@ -1,0 +1,32 @@
+{
+    "framework-version": 5,
+    "name": "TextBoxFacil",
+    "namespace": "Stanford\\TextBoxFacil",
+    "description": "Several useful tools for daily work with redcap.",
+    "tt_description": "cjf_description",
+    "documentation": "README.md",
+    "tt_documentation": "cjf_documentation",
+    "authors": [
+        {
+            "name": "Alvaro A Alvarez",
+            "email": "alvaro1@stanford.edu",
+            "institution": "Stanford University"
+        }
+    ],
+    "permissions": [ "hook_every_page_top" ],
+    "enable-every-page-hooks-on-system-pages": true,
+    "links": {
+        "project": [],
+        "control-center": []
+    },
+    "no-auth-pages": [],
+    "project-settings": [],
+    "system-settings": [],
+    "crons": [],
+    "compatibility": {
+        "php-version-min": "",
+        "php-version-max": "",
+        "redcap-version-min": "",
+        "redcap-version-max": ""
+    }
+}

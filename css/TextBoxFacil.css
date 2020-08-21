@@ -1,0 +1,166 @@
+/*
+ * Console styles
+ */
+#textboxfacil-block {
+    position:fixed;
+    z-index:9999;
+    font-size:1rem;
+    left:0;    
+    right:0;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    background: #3C3F41;
+    color: #FFFFFF;
+}
+
+/*Console on top*/
+.textboxfacil-block-up
+{
+    top:0;
+    height:40vh;
+}
+
+/*Console on bottom*/
+.textboxfacil-block-down
+{
+    bottom:0;
+    height:40vh;
+}
+
+/*Console on fullscreen*/
+.textboxfacil-block-all
+{
+    bottom:0;
+    height:100vh;
+}
+
+
+/*
+ * Navigation menu styles
+ */
+.textboxfacil-block-nav {
+    margin: 0;
+    border: 1px solid black;
+    padding-left: 5px;
+}
+
+.textboxfacil-block-nav .nav-link {
+    display: block;
+    padding: .5rem 1rem;
+    color: rgba(0, 168, 242, 0.85) !important;
+    font-weight: bold;
+    font-size:1rem;
+    background: transparent !important;
+    border: 0;
+}
+
+.textboxfacil-block-nav .nav-link:hover,
+.textboxfacil-block-nav .nav-link:active {
+    color: rgba(222, 186, 106, 0.85) !important;
+}
+
+.textboxfacil-block-nav .nav-tabs {
+    border-bottom: 0;
+}
+
+.textboxfacil-tab > div {
+    width: 100%;
+    height: 100%;
+}
+
+.textboxfacil-tab {    
+    flex-grow:1 !important;
+    padding: 5px !important;
+    border: 0 !important;
+}
+
+
+/*
+ * TextArea styles overflow-wrap: normal;  overflow-x: auto;
+ */
+#textboxfacil-textarea
+{
+    width:100%;
+    height:100%;
+    white-space: pre;
+
+
+    word-wrap:break-word;
+    background: #2b2b2b;
+    color:White;
+    border: 0;
+    padding-left: 7px;
+    padding-top: 2px;
+}
+
+/*Text medium size*/
+.textboxfacil-textarea-md
+{
+    font-size: 1.5em;
+}
+
+/*Text bigger size*/
+.textboxfacil-textarea-lg
+{
+    font-size: 2em;
+}
+
+
+/*
+ * Tool icons styles
+ */
+
+.textboxfacil-btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 30px;
+	height: 30px;
+	border: 2px solid white;
+	font-size: 1rem;
+	cursor: pointer;
+	margin: 2px;
+}
+
+.textboxfacil-btn > .textboxfacil-btns {
+	font-size: 1rem;
+	position: relative;
+    color: transparent;
+    background-image: -webkit-gradient(linear, left bottom, left top, from(Black), color-stop(50%, Black), color-stop(50%, White), to(White));
+	background-image: linear-gradient(0deg, Black 0%, Black 50%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 100%);
+	background-repeat: repeat;
+	background-size: 100% 200%;
+    background-position: 0 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-transition: background-position 300ms;
+	transition: background-position 300ms;
+}
+
+.textboxfacil-btn::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    background: rgba(255, 255, 255, 1);
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: scale3d(1, 0, 1);
+    transform: scale3d(1, 0, 1);
+    -webkit-transition: -webkit-transform 300ms;
+    transition: transform 300ms;
+    transition: transform 300ms, -webkit-transform 300ms;
+}
+
+.textboxfacil-btn:hover .textboxfacil-btns {
+	background-position: 0 100%;
+}
+
+.textboxfacil-btn:hover::before {
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scale3d(1, 1, 1);
+	transform: scale3d(1, 1, 1);
+}
