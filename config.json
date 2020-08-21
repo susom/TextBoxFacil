@@ -2,7 +2,7 @@
     "framework-version": 5,
     "name": "TextBoxFacil",
     "namespace": "Stanford\\TextBoxFacil",
-    "description": "Several useful tools for daily work with redcap.",
+    "description": "Help to work with text areas in REDCap",
     "tt_description": "cjf_description",
     "documentation": "README.md",
     "tt_documentation": "cjf_documentation",
