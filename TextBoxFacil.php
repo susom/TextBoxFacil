@@ -7,6 +7,7 @@ class TextBoxFacil extends \ExternalModules\AbstractExternalModule
 
 	function hook_every_page_top($project_id)
 	{
+
 		?>
 		<!-- TextBoxFacil Module -->
 		<link rel="stylesheet" href="<?= $this->getUrl("css/TextBoxFacil.css"); ?>">

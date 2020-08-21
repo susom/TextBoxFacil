@@ -2,7 +2,7 @@
     "framework-version": 5,
     "name": "TextBoxFacil",
     "namespace": "Stanford\\TextBoxFacil",
-    "description": "Help to work with text areas in REDCap",
+    "description": "Just press the combination \"shift+spacebar\" when you are working in any text area or input field. ",
     "tt_description": "cjf_description",
     "documentation": "README.md",
     "tt_documentation": "cjf_documentation",
