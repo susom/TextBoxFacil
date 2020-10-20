@@ -223,7 +223,7 @@ TextBoxFacilJs.Main = function()
     }
 
     //Register hotkeys events
-    hotkeys('shift+space', function (event, handler) { TextBoxFacilJs.ConsoleToggle(event.target || event.srcElement); });
+    hotkeys('ctrl+space', function (event, handler) { TextBoxFacilJs.ConsoleToggle(event.target || event.srcElement); });
 
     //destroy main function (mayhem)
     TextBoxFacilJs.Main = null;
